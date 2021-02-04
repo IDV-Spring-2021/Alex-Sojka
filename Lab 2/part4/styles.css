@@ -1,0 +1,52 @@
+
+body {margin: 4em 10%; background: darkgrey;}
+
+.ball {
+	margin-bottom: 100px;
+}
+
+.ball1 {
+	animation-name: one;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+ 	animation-delay:1s;
+}
+
+.ball2 {
+	animation-name: two;
+	animation-duration: 4s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+ 	animation-delay:1s;
+}
+
+.ball3 {
+	animation-name: three;
+	animation-duration: 5s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+ 	animation-delay:1s;
+}
+
+@keyframes one {
+from {tranform: translate(0px) rotate(0turn)}
+	to {transform: translate(1000px) rotate(2turn);}
+}
+
+@keyframes two {
+	0% {transform: translate(0px) rotate(0turn)}
+	10% {transform: translate(500px) rotate(5turn)}
+	30% {transform: translate(-250px) rotate(1turn)}
+	100% {transform: translate(1000px) rotate(2turn);}
+}
+
+@keyframes three {
+	0% {transform: translateY(0px) rotate(0deg)}
+	30% {transform: translateY(-80px) rotate(10deg)}
+	60% {transform: translateY(80px) rotate(60deg)}
+	80% {transform: translateY(-80px) rotate(20deg)}
+	90% {transform: translateY(50px) rotate(20deg)}
+	95% {transform: translateY(-80px) rotate(20deg)}
+	100% {transform: translateY(0px) rotate(10deg);}
+}

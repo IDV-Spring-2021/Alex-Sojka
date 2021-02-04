@@ -1,0 +1,76 @@
+
+body {
+	background-image: url('bg.png');
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: 0px -250px;
+}
+
+.wrapper {
+	margin-top: 200px;
+}
+
+.orange {
+	position: absolute;
+  bottom: 100px;
+	animation-name: orang;
+		animation-fill-mode: forwards;
+	animation-duration: 6.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.49,.44,.98,.07);
+}
+
+.yellow {
+	position: absolute;
+  bottom: 75px;
+	animation-name: yeller;
+		animation-fill-mode: forwards;
+	animation-duration: 4s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.52,.33,.81,.95);
+}
+
+.blue {
+	position: absolute;
+  bottom: 50px;
+	animation-name: blew;
+		animation-fill-mode: forwards;
+	animation-duration: 3.8s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.54,.31,.01,.56);
+}
+
+.green {
+	position: absolute;
+  bottom: 25px;
+	animation-name: gree;
+		animation-fill-mode: forwards;
+	animation-duration: 6s;
+	animation-iteration-count: 1;
+	animation-timing-function: cubic-bezier(.49,.44,.98,.07);
+}
+
+@keyframes orang {
+	0% {transform: translate(0px)}
+	10% {transform:rotateZ(-30deg)}
+	45% {transform: rotateZ(0deg) translate(400px)}
+	100% {transform: translate(1000px);}
+}
+
+@keyframes yeller {
+	from {transform: translate(0px)}
+	to {transform: translate(1000px)}
+}
+
+@keyframes blew {
+	0% {transform: translate(0px)}
+	95% {transform: translate(950px)}
+	96% {transform: rotateX(90deg)}
+100%{transform: translate(1000px);}
+}
+
+@keyframes gree {
+	from {transform: translate(0px)}
+	to {transform: translate(1000px)}
+}
