@@ -65,8 +65,6 @@ body {
 
 @keyframes blew {
 	0% {transform: translate(0px)}
-	95% {transform: translate(950px)}
-	96% {transform: rotateX(90deg)}
 100%{transform: translate(1000px);}
 }
 
