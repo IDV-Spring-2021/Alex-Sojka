@@ -1,0 +1,56 @@
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Lato:300,400);
+
+body {
+  background: #8a81c9;
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  margin: 6em 0;
+  overflow:hidden;
+}
+
+section {
+  width: 500px;
+  margin: auto;
+  animation: slideIn .8s linear, fadeIn .2s ease-in;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  font-family: 'Roboto', sans-serif;
+  padding: 1em 2em;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.03), 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  margin: auto;
+  width: 430px;
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 4em;
+  font-weight: 300;
+  margin: 0 0 .15em 0;
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateY(400px);
+      animation-timing-function: ease-out;}
+  60% {
+      transform: translateY(-50px);
+      animation-timing-function: ease-in;}
+  80% {
+      transform: translateY(-10px);
+      animation-timing-function: ease-out;}
+  100% {
+      transform: translateY(0px);
+      animation-timing-function: ease-out;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Lato:300,400);
+
+body {
+  font-family: 'Lato', cursive;
+  font-weight: bold;
+  font-size:200px;
+  background:#ffffff;
+}
+
+div {
+  width:80%;
+  margin:4rem auto;
+  text-align:center;
+   perspective: 800px;
+ }
+
+span {
+   display:inline-block;
+   margin-left: -20px;
+   color:#1e1e1e;
+}
+
+span:nth-child(1) {
+  animation: flipUp 5s cubic-bezier(0.65, -0.55, 0.26, 1.55) both;
+  transform-origin: 0% 100%;
+}
+
+span:nth-child(2) {
+    animation: flipUp 5s cubic-bezier(0.65, -0.55, 0.26, 1.55) both;
+      transform-origin: 0% 50%;
+}
+
+span:nth-child(3) {
+  animation: flipUp 5s cubic-bezier(0.65, -0.55, 0.26, 1.55) both;
+    transform-origin: 0% 5%;
+}
+
+span:nth-child(4) {
+  animation: flipUp 5s cubic-bezier(0.65, -0.55, 0.26, 1.55) both;
+    transform-origin: 30% 80%;
+}
+
+span:nth-child(5) {
+  animation: flipUp 5s cubic-bezier(0.65, -0.55, 0.26, 1.55) both;
+    transform-origin: 80% 30%;
+ }
+
+span:nth-child(6) {
+  animation: flipUp 5s cubic-bezier(0.65, -0.55, 0.26, 1.55) both;
+    transform-origin: 50% 50%;
+}
+
+span:nth-child(7) {
+  animation: flipUp 5s cubic-bezier(0.65, -0.55, 0.26, 1.55) both;
+    transform-origin: 10% 10%;
+}
+
+@keyframes flipUp {
+  from {transform: rotateX(90deg);}
+  to {transform: rotateX(0deg);}
+}
